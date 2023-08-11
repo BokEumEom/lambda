@@ -1,0 +1,4 @@
+{
+  "source": ["aws.ecs"],
+  "detail-type": ["ECS Deployment State Change"]
+}
