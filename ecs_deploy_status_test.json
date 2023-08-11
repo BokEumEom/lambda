@@ -1,0 +1,19 @@
+{
+  "version": "0",
+  "id": "ddca6449-b258-46c0-8653-e0e3aEXAMPLE",
+  "detail-type": "ECS Deployment State Change",
+  "source": "aws.ecs",
+  "account": "111122223333",
+  "time": "2023-07-26T01:54:05Z",
+  "region": "us-west-2",
+  "resources": [
+    "arn:aws:ecs:ap-northeast-2:571279452153:service/water-csms-cluster/csms"
+  ],
+  "detail": {
+    "eventType": "INFO",
+    "eventName": "SERVICE_DEPLOYMENT_COMPLETED",
+    "deploymentId": "ecs-svc/2585409033926599226",
+    "updatedAt": "2023-07-26T01:51:47.148Z",
+    "reason": "ECS deployment deploymentID completed."
+  }
+}
