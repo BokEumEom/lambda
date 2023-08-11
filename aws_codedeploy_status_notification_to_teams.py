@@ -5,21 +5,8 @@ import os
 
 from base64 import b64decode
 
-# Get values from Environment variables
-# TEAMS_WEBHOOK_URL = os.environ['TEAMS_WEBHOOK_URL']
-
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
-# def send_message(message):
-#     headers = {
-#         'Content-Type': 'application/json'
-#     }
-#     response = requests.post(TEAMS_WEBHOOK_URL, data=json.dumps(message), headers=headers)
-#     if response.status_code == 200:
-#         logger.info("Message posted to MS Teams")
-#     else:
-#         logger.error("Failed to send message to MS Teams: %s", response.text)
 
 def lambda_handler(event, context):
     webhook_url = os.environ.get('TEAMS_WEBHOOK_URL')
@@ -42,21 +29,6 @@ def lambda_handler(event, context):
 
     logger.info("Event        : " + str(event))
     # logger.info("TEAMS Webhook URL: " + TEAMS_WEBHOOK_URL)
-
-    # state_emoji = {
-    #     'SERVICE_DEPLOYMENT_FAILED': '❌',
-    #     'SERVICE_DEPLOYMENT_COMPLETED': '✅',
-    #     'SERVICE_DEPLOYMENT_IN_PROGRESS': '🚀'
-    # }
-
-    # if "FAILED" in event_name:
-    #     color = "#ff4d4f"
-    # elif "PROGRESS" in event_name:
-    #     color = "#faad14"
-    # elif "COMPLETED" in event_name:
-    #     color = "#52c41a"
-    # else:
-    #     color = "#1890ff"
         
     # Customize the message based on the deployment status
     emoji, heading_color = None, None
