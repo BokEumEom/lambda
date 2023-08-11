@@ -1,0 +1,23 @@
+{
+  "version": "0",
+  "id": "844e2571-85d4-695f-b930-0153b71dcb42",
+  "detail-type": "RDS DB Cluster Event",
+  "source": "aws.rds",
+  "account": "123456789012",
+  "time": "2018-10-06T12:26:13Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:rds:us-east-1:123456789012:cluster:mysql-cluster-2018-10-06-12-24"
+  ],
+  "detail": {
+    "EventCategories": [
+      "notification"
+    ],
+    "SourceType": "CLUSTER",
+    "SourceArn": "arn:aws:rds:us-east-1:123456789012:cluster:mysql-cluster-2018-10-06-12-24",
+    "Date": "2018-10-06T12:26:13.882Z",
+    "SourceIdentifier": "rds:mysql-instance-2018-10-06-12-24",
+    "Message": "DB cluster created",
+    "EventID": "RDS-EVENT-0170"
+  }
+}
