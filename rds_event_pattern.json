@@ -1,0 +1,4 @@
+{
+  "source": ["aws.rds"],
+  "detail-type": ["RDS DB Cluster Event"]
+}
